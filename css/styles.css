@@ -1,0 +1,97 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for both pages */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents the container from expanding */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gif {
+    width: 300px;
+    height: auto;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.yes-button, .no-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styles for the first page */
+.yes-button {
+    background-color: hotpink; /* Hot pink background */
+    color: white; /* White font color */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.no-button {
+    background-color: transparent; /* Transparent background */
+    color: hotpink; /* Hot pink font color */
+    border: 2px solid hotpink; /* Hot pink border */
+    border-radius: 5px;
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition for font color and border color change */
+}
+
+.no-button:hover {
+    color: white; /* Change font color on hover */
+    background-color: hotpink; /* Change background color on hover */
+    transform: translate(calc(50% - 50px), calc(50% - 50px)) rotate(360deg); /* Move and rotate the button on hover */
+}
+
+/* Styles specific to the second page */
+body.second-page {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    background-color: #ADD8E6; /* Baby blue background */
+    color: black; /* Black font color */
+    font-family: 'Lora', serif; /* Use Lora font */
+}
+
+.container.second-page {
+    padding: 20px; /* Add padding to the container */
+    box-sizing: border-box; /* Include padding in the width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 800px; /* Limit paragraph width for better readability */
+}
